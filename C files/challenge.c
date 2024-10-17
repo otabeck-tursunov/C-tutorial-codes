@@ -732,22 +732,22 @@ int main()
     // fprintf(pF, "Otabek, Otabek, Otabek\nShukron, Sabina, Ifora");
     // fclose(pF);
 
-    // FILE *pF = fopen("test.txt", "r");
-    // char line1[255];
-    // char line2[255];
+    FILE *pF = fopen("test.txt", "r");
+    char line1[255];
+    char line2[255];
 
-    // // fgets(line1, 255, pF);
-    // // fgets(line2, 255, pF);
+    // fgets(line1, 255, pF);
+    // fgets(line2, 255, pF);
 
-    // // printf("%s", line1);
-    // // printf("%s", line2);
-    // while (fgets(line1, 255, pF) != NULL)
-    // {   
-    //     printf("%s", line1);
-    // }
+    // printf("%s", line1);
+    // printf("%s", line2);
+    while (fgets(line1, 255, pF) != NULL)
+    {   
+        printf("%s", line1);
+    }
     
 
-    // fclose(pF);
+    fclose(pF);
 
-    // return 0;
+    return 0;
 }
